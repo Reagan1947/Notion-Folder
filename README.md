@@ -11,73 +11,43 @@
 <p align="center">
 </p>
 
-
 <p align="center">
-<img src="https://github.com/Reagan1947/latex2word/blob/master/exp_pic.png">
+<img src="https://github.com/Reagan1947/Notion-Folder/blob/main/assests/sample.png">
 </p>
 
-## Warning!
 
-If you are **unable** to use mini window or top window button is **normal**.
+## Feature
 
-如果不能使用最小化或者置顶窗口按钮这是正常的。
+This tool allows you to open **local files** in Notion in a way that creates links.
+该工具允许你以创建链接的方式**打开本地文件**在 Notion 中
 
-**🎉In [release](https://github.com/Reagan1947/latex2word/releases), you can obtain the EXE execution file by decompressing the rar file. Currently, only x64 windows operating system is supported.**
+## How to Use
 
+Get the address of your file, e.g. /User/README.md, add http://localhost:3000/open-file?path= in front of the address to get the final address of your file: http://localhost:3000/open-file?path=/User/ README.md Use this address to open your local file in Notion.
 
-**🎉在[release](https://github.com/Reagan1947/latex2word/releases)中下载rar文件解压即可获得exe执行文件，目前仅支持x64-windows操作系统。**
-
-## Key Feature
-
-It make you to input latex math equation to word more easy. It looks like a extentions of word which is same like pages math equation function. Your Latex formula will be coverd to MathML.
-
-它能够让您方便的使用Latex公式表达式在Office Word中输入公式。它的功能和Apple公司开发的Pages上的公式输入功能类似。您的Latex公式会被转换为MathML公式。
+获取您的文件地址, 例如: /User/README.md, 在地址前增加 http://localhost:3000/open-file?path= 最终获得您的文件访问地址: http://localhost:3000/open-file?path=/User/README.md 在 Notion 中使用该地址打开您的本地文件。
 
 ## Getting Started
 
-This program is crate base on electron. You could try to build by the sorce file which I have puted in code.
-
-这个小程序基于npm上的electron开发，你可以尝试使用[code](https://github.com/Reagan1947/latex2word)中的源文件基于electron进行运行。
+// TBD
 
 ## Dependency
 
-This program id build base other githubprogram, based program is here:
-
-这个小程序的开发参考了一些其他的github项目，如下是参考的项目：
-
-1. [Latex2Equation](https://github.com/idf/LaTeX2Word-Equation)
-2. [MathJax](https://www.mathjax.org/)
+- Electron
+- Express Service
+- Node.js
 
 ## Note&BUG
 
-The source file does not include the required parts such as fontawesome mathjax.
-
-At present, there are the following bugs:
-
-源文件中并没有包括需要的部分例如fontawesome MathJax的源文件。
-
-目前存在如下的Bug：
-
-1. Window cannot be enlarged or set at the top   //无法放大或置顶窗口
-
-2. RAM memory utilization is too high   //RAM内存使用率过高
-
-3. The installation package did not delete unnecessary support files. The files are too large after electronic packaging   //安装包没有删除不需要的支持文件，electron打包以后文件过大
+// TBD
 
 ## To Do List
 
-- [ ]  Finish mini and top window function.
-- [ ] Rebuild it by VUE
+- [ ] Clean Code
 
-## Versioning
+## Version
 
-- 2020/03/13  v1.0-beta 
-
-## Authors
-
-* **Reagan**  *China Student* - [Reagan1947](https://github.com/Reagan1947)
-
-Like this program give me a star ⭐！Danke！
+- Notion-Folder v0.1.0
 
 ## License
 

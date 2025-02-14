@@ -19,6 +19,7 @@
 ## Feature
 
 This tool allows you to open **local files** in Notion in a way that creates links.
+
 该工具允许你以创建链接的方式**打开本地文件**在 Notion 中
 
 ## How to Use

@@ -5,18 +5,21 @@ const express = require('express');
 const server = express();
 const port = 3000;
 
+let engine = require("ejs-locals");
+
 // Process Get Request
 server.get('/open-file', (req, res) => {
     const filePath = req.query.path;
     if (filePath) {
         // Open File
         shell.openPath(filePath).then(() => {
-            res.send(`Open file successfuly: ${filePath}`);
+            res.render("open_success", { open_file_path: filePath });
         }).catch(err => {
-            res.status(500).send(`Open file failed: ${err.message}`);
+            console.log(`Open File Failed ${err.message}`)
+            res.render("open_fail", { open_file_path: filePath });
         });
     } else {
-        res.status(400).send('File path is needed');
+        res.render("no_path");
     }
 });
 
@@ -24,6 +27,11 @@ server.get('/open-file', (req, res) => {
 server.listen(port, () => {
     console.log(`Express Server is Runing http://localhost:${port}`);
 });
+
+server.engine("ejs", engine);
+server.set("views", __dirname + "/views");
+server.set("view engine", "ejs");
+server.use(express.static(__dirname + '/views'));
 
 function createWindow () {
     const win = new BrowserWindow({
@@ -34,7 +42,8 @@ function createWindow () {
             contextIsolation: true,
             nodeIntegration: true
         },
-        backgroundColor: "#f3f3f2"
+        backgroundColor: "#f3f3f2",
+        resizable: false
     });
 
     win.loadFile('index.html');

@@ -35,6 +35,37 @@
         font-weight: bold;
         line-height: .1em;
     }
+
+    #github-icon {
+        width: 13px;
+        height: auto;
+    }
+
+    #footer {
+        text-align: center;
+        position: relative;
+        bottom: -45px;
+    }
+
+    a {
+        font-family: 'Microsoft YaHei', SimHei!important;
+        color: #aaaaaa !important;
+        font-size: 12px;
+    }
+
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    span {
+        position: relative;
+        bottom: 1px;
+    }
 </style>
 
 <body>
@@ -45,6 +76,10 @@
         <div id="banner-info">
             <p>Notion-Folder</p>
             <p>Open your file locally</p>
+        </div>
+        <div id="footer">
+            <img id="github-icon" src="./src/github.png">
+            <span><a href="http://www.baidu.com">@Reagan1947/Notion-Folder</a></span>
         </div>
     </div>
     <script src="renderer.js"></script>

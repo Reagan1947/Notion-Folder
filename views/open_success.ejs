@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon-16x16.png">
+    <link rel="manifest" href="./src/site.webmanifest">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open Sucess</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<script>
+   setTimeout(function() {
+      window.close();
+    }, 5000);
+</script>
+<style>
+    .alert {
+        margin: 15px;
+        max-width: 800px;
+        font-family: 'Microsoft YaHei', SimHei;
+    }
+
+    .alert-heading {
+        font-weight: bold;
+        color: black;
+    }
+
+    .alert-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .alert-icon-contain {
+        float: left;
+    }
+
+    .main-contain {
+        padding-left: 27px;
+        font-size: 15px;
+    }
+
+    .auto-close-alert {
+        font-weight: bold;
+        color: black;
+    }
+</style>
+
+<body>
+    <div class="alert alert-light" role="alert">
+        <div class="alert-icon-contain">
+            <img class="alert-icon" src="./src/icons8-light-bulb-96.png">
+        </div>
+
+        <div class="main-contain">
+            <div class="alert-heading">File successfully opened:</div>
+        <p><%= open_file_path %></p>
+        <hr>
+        <p class="mb-0 auto-close-alert">The page will close automatically...</p>
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,22 +1,20 @@
 {
   "name": "notion-folder",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Open notion file locally",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/Reagan1947/Notion-Folder",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Express",
+    "Notion"
   ],
-  "author": "GitHub",
+  "author": "Reagan1947",
   "license": "CC0-1.0",
   "devDependencies": {
     "@electron-forge/cli": "^7.6.1",

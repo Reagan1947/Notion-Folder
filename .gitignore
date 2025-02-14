@@ -2,3 +2,7 @@
 node_modules/
 .gitignore
 icon/
+out/
+yarn.lock
+yarn-error.log
+forge.config.js

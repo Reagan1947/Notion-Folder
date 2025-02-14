@@ -30,7 +30,14 @@ Get the address of your file, e.g. /User/README.md, add http://localhost:3000/op
 
 ## Getting Started
 
-// TBD
+You'll need [Node.js](https://nodejs.org/) installed on your computer in order to build this app.
+
+```shell
+$ git clone https://github.com/Reagan1947/Notion-Folder.git
+$ cd Notion-Folder
+$ npm install
+$ npm start
+```
 
 ## Dependency
 
@@ -40,18 +47,29 @@ Get the address of your file, e.g. /User/README.md, add http://localhost:3000/op
 
 ## Note&BUG
 
-// TBD
+This is an **alpha** version of a program that **may have some bugs**, so feel free to submit your [issue](https://github.com/Reagan1947/Notion-Folder/issues) !
+
+这是一个 **alpha** 版本的程序**可能存在一些 bug** 欢迎你提交你的 [issue](https://github.com/Reagan1947/Notion-Folder/issues) !
 
 ## To Do List
 
-- [ ] Clean Code
+- [x] Clean Code
+- [ ] Custom Listing port
+- [ ] Quick generate File Link
 
 ## Version
 
-- Notion-Folder v0.1.0
+- Notion-Folder v0.1.0-alpha
+- Notion-Folder v0.1.1-alpha
+
+## Contribution
+
+Anyone is welcome to contribute to the project !
+
+欢迎任何人贡献该项目!
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Reagan1947/Notion-Folder/blob/main/LICENSE.md) file for details.
 
-项目许可证为MIT许可证，你可以在[LICENSE](LICENSE)文件中查看。
+项目许可证为MIT许可证，你可以在 [LICENSE](https://github.com/Reagan1947/Notion-Folder/blob/main/LICENSE.md) 文件中查看。

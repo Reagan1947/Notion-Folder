@@ -43,7 +43,8 @@ function createWindow () {
             nodeIntegration: true
         },
         backgroundColor: "#f3f3f2",
-        resizable: false
+        resizable: false,
+        icon: path.join(__dirname, '/icon/Notion-Folder.ico')
     });
 
     win.loadFile('index.html');

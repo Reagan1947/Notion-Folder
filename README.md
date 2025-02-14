@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://github.com/Reagan1947/Notion-Folder/blob/main/src/Notion-Folder.png" alt="Markdownify" width="170">
+  <img src="https://github.com/Reagan1947/Notion-Folder/blob/main/assests/notion_folder_icon.png" alt="Notion-Folder" width="170">
   <br>
   Notion-Folder
   <br>

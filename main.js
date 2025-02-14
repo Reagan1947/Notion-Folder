@@ -5,11 +5,11 @@ const express = require('express');
 const server = express();
 const port = 3000;
 
-// 处理 GET 请求
+// Process Get Request
 server.get('/open-file', (req, res) => {
     const filePath = req.query.path;
     if (filePath) {
-        // 打开文件
+        // Open File
         shell.openPath(filePath).then(() => {
             res.send(`Open file successfuly: ${filePath}`);
         }).catch(err => {
@@ -20,9 +20,9 @@ server.get('/open-file', (req, res) => {
     }
 });
 
-// 启动 Express 服务器
+// Booming Express Service
 server.listen(port, () => {
-    console.log(`服务器运行在 http://localhost:${port}`);
+    console.log(`Express Server is Runing http://localhost:${port}`);
 });
 
 function createWindow () {
@@ -54,7 +54,7 @@ app.on('activate', () => {
     }
 });
 
-// 监听打开文件事件
+// Listening Open File Event
 ipcMain.on('open-file', (event, filePath) => {
     shell.openPath(filePath);
 });

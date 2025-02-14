@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-<img src="https://github.com/Reagan1947/Notion-Folder/blob/main/assests/sample.png">
+<img src="https://github.com/Reagan1947/Notion-Folder/blob/main/assests/notion_folder_sample.png">
 </p>
 
 
